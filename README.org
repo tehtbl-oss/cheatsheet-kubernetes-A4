@@ -284,7 +284,7 @@ https://codefresh.io/kubernetes-guides/kubernetes-cheat-sheet/
 #+LATEX_HEADER: \rhead{Updated: \today}
 #+LATEX_HEADER: \rfoot{\thepage\ of \pageref{LastPage}}
 #+LATEX_HEADER: \lfoot{\href{https://github.com/dennyzhang/cheatsheet-kubernetes-A4}{GitHub: https://github.com/dennyzhang/cheatsheet-kubernetes-A4}}
-#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4}}
+#+LATEX_HEADER: \lhead{\href{https://cheatsheet.dennyzhang.com/cheatsheet-slack-A4}{Blog URL: https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-A4}}
 #+AUTHOR: Denny Zhang
 #+EMAIL:  denny@dennyzhang.com
 #+TAGS: noexport(n)
@@ -1707,7 +1707,6 @@ https://github.com/kubernetes/kubernetes/issues/45000
 https://stackoverflow.com/questions/44325048/kubernetes-configmap-only-one-file
 * HALF doc: mount configmap as a seperate file                     :noexport:
 * TODO How to pass credentials to yaml in a secured way?           :noexport:
-* TODO kubectl cluster-info only get recent information            :noexport:
 * DONE k8s pod dns                                                 :noexport:
   CLOSED: [2019-05-25 Sat 08:21]
 https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
@@ -1722,10 +1721,4 @@ One pod with two containers
 root@422e158feb46fff15217b24e4f8ad20b [ ~ ]# kubectl get pods -o='custom-columns=PODS:.metadata.name,Images:.spec.containers[*].image' --all-namespaces | grep sche
 kube-scheduler-422e158feb46fff15217b24e4f8ad20b            my/kube-scheduler:v1.13.1,my/wcp-schedext:0.0.1.26323453
 #+END_EXAMPLE
-
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Create PVC workflow                                         :noexport:
-* TODO Create CRD workflow                                         :noexport:
-* #  --8<-------------------------- separator ------------------------>8-- :noexport:
-* TODO Why we need kube-controller-manager                         :noexport:
-* TODO Why we need cluster-controller-manager                      :noexport:
+* TODO kubectl cluster-info only get recent information            :noexport:
